@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arvo", serif;
+  font-family: "Bowlby One SC", cursive;
+  font-family: "Concert One", cursive;
+  font-family: "Crete Round", serif;
+  font-family: "Inconsolata", monospace;
+  font-family: "Prosto One", cursive;
+}
+body {
+  height: 100vh;
+}
+
+header {
+  /* display: flex; */
+  height: 4rem;
+  background-color: #6d7c8f;
+  color: white;
+  display: flex;
+  border-bottom: 4px solid rgba(214, 115, 214, 0.582);
+  /* vertical-align: middle; */
+}
+header .left {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+  gap: 0.3rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+header .left nav {
+  display: inline-block;
+  color: rgba(214, 115, 214, 0.582);
+}
+header .right {
+  flex: 1;
+  /* border: 1px solid red; */
+  /* gap: 1rem; */
+  /* padding: auto 10px; */
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+header .right a {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  /* padding-top: calc(2rem - 8px); */
+}
+#home {
+  color: rgba(214, 115, 214, 0.582);
+}
+/* ? main section */
+.main {
+  background-image: url(./img/showcase.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(75vh - 13rem);
+  width: 100%;
+  color: white;
+}
+.main h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 8rem;
+}
+.main p {
+  text-align: center;
+}
+/* ! section*/
+.subs {
+  height: 4rem;
+  display: flex;
+  /* flex-direction: row; */
+  /* gap: 1rem; */
+  background-color: #6d7c8f;
+  color: white;
+}
+.subs nav {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  /* gap: 1rem; */
+  padding-left: 1rem;
+}
+section form {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+  gap: 0.3rem;
+  padding-right: 1rem;
+}
+section form input {
+  height: 2rem;
+}
+.subs button {
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  /* border-radius: 3px; */
+}
+/*? section ims*/
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  font-size: 1rem;
+  opacity: 0.9;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 25vh;
+}
+.imgs .html {
+  flex: 1;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.imgs .css {
+  flex: 1;
+  text-align: center;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
+  padding: 1rem;
+}
+.imgs .graphic {
+  flex: 1;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.imgs img {
+  width: auto;
+  height: 10vh;
+  padding-top: 1.5rem;
+}
+footer {
+  height: 5rem;
+  background-color: #6d7c8f;
+  color: white;
+  font-size: 8px;
+  text-align: center;
+  padding-top: 1rem;
+}
+footer img {
+  height: 1.8rem;
+  width: auto;
+}
+/* ! *** ABOUT ****/
+.about {
+  height: calc(100vh - 13rem);
+  position: relative;
+}
+.first {
+  display: inline-block;
+  width: 60%;
+  /* padding: 1rem; */
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.second {
+  display: inline-block;
+  width: 30%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #6d7c8f;
+  color: white;
+  padding: 1rem;
+}
+.first__second {
+  background-color: #6d7c8f;
+  color: white;
+  padding: 1rem;
+}
+
+/*! ********* SERVİCES  *******/
+.main__services {
+  position: relative;
+  padding-left: 1.5rem;
+  height: calc(100vh - 13rem);
+}
+.main__services h1 {
+  font-size: 1rem;
+  padding: 1rem;
+}
+.main__services .main__services-paragraph {
+  display: inline-block;
+  margin: 0.1rem;
+  /* border: 1px solid red; */
+  background-color: rgba(0, 0, 0, 0.04);
+  width: 65%;
+  padding: 1rem 0.7rem;
+  height: 30%;
+}
+.main__services .main__services-paragraph p {
+  padding-top: 1rem;
+}
+.form {
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  /* border: 1px solid red; */
+  background-color: #6d7c8f;
+  color: white;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+.form input {
+  width: 100%;
+}
+.form .button {
+  display: inline-block;
+}
+#send {
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  width: 3rem;
+}
+.form h1 {
+  margin-bottom: 1rem;
+}
